@@ -1,0 +1,103 @@
+git --version
+ in dir /home/tcwg-buildbot/worker/clang-armv8-lld-2stage/test/lnt (timeout 1200 secs)
+ watching logfiles {}
+ argv: [b'git', b'--version']
+ environment:
+  HOME=/home/tcwg-buildbot
+  HOSTNAME=linaro-clang-armv8-lld-2stage
+  LANG=en_US.UTF-8
+  LOGNAME=tcwg-buildbot
+  MAIL=/var/mail/tcwg-buildbot
+  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+  PWD=/home/tcwg-buildbot/worker/clang-armv8-lld-2stage/test/lnt
+  SHELL=/bin/bash
+  SHLVL=0
+  SUDO_COMMAND=/bin/bash -c buildbot-worker restart --nodaemon /home/tcwg-buildbot/worker
+  SUDO_GID=0
+  SUDO_UID=0
+  SUDO_USER=root
+  TERM=xterm
+  USER=tcwg-buildbot
+  _=/usr/bin/buildbot-worker
+ using PTY: False
+git version 2.25.1
+program finished with exit code 0
+elapsedTime=0.009986
+stat: No such file or directory: /home/tcwg-buildbot/worker/clang-armv8-lld-2stage/test/lnt/.buildbot-patchedprogram finished with exit code 2
+program finished with exit code 0
+git fetch -t https://github.com/llvm/llvm-lnt.git HEAD --progress
+ in dir /home/tcwg-buildbot/worker/clang-armv8-lld-2stage/test/lnt (timeout 1200 secs)
+ watching logfiles {}
+ argv: [b'git', b'fetch', b'-t', b'https://github.com/llvm/llvm-lnt.git', b'HEAD', b'--progress']
+ environment:
+  HOME=/home/tcwg-buildbot
+  HOSTNAME=linaro-clang-armv8-lld-2stage
+  LANG=en_US.UTF-8
+  LOGNAME=tcwg-buildbot
+  MAIL=/var/mail/tcwg-buildbot
+  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+  PWD=/home/tcwg-buildbot/worker/clang-armv8-lld-2stage/test/lnt
+  SHELL=/bin/bash
+  SHLVL=0
+  SUDO_COMMAND=/bin/bash -c buildbot-worker restart --nodaemon /home/tcwg-buildbot/worker
+  SUDO_GID=0
+  SUDO_UID=0
+  SUDO_USER=root
+  TERM=xterm
+  USER=tcwg-buildbot
+  _=/usr/bin/buildbot-worker
+ using PTY: False
+From https://github.com/llvm/llvm-lnt
+ * branch            HEAD       -> FETCH_HEAD
+program finished with exit code 0
+elapsedTime=0.206672
+git reset --hard FETCH_HEAD --
+ in dir /home/tcwg-buildbot/worker/clang-armv8-lld-2stage/test/lnt (timeout 1200 secs)
+ watching logfiles {}
+ argv: [b'git', b'reset', b'--hard', b'FETCH_HEAD', b'--']
+ environment:
+  HOME=/home/tcwg-buildbot
+  HOSTNAME=linaro-clang-armv8-lld-2stage
+  LANG=en_US.UTF-8
+  LOGNAME=tcwg-buildbot
+  MAIL=/var/mail/tcwg-buildbot
+  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+  PWD=/home/tcwg-buildbot/worker/clang-armv8-lld-2stage/test/lnt
+  SHELL=/bin/bash
+  SHLVL=0
+  SUDO_COMMAND=/bin/bash -c buildbot-worker restart --nodaemon /home/tcwg-buildbot/worker
+  SUDO_GID=0
+  SUDO_UID=0
+  SUDO_USER=root
+  TERM=xterm
+  USER=tcwg-buildbot
+  _=/usr/bin/buildbot-worker
+ using PTY: False
+HEAD is now at 9bf1888 Use segment's off and vaddr fields instead of IsSharedObject heuristic
+program finished with exit code 0
+elapsedTime=0.015203
+git rev-parse HEAD
+ in dir /home/tcwg-buildbot/worker/clang-armv8-lld-2stage/test/lnt (timeout 1200 secs)
+ watching logfiles {}
+ argv: [b'git', b'rev-parse', b'HEAD']
+ environment:
+  HOME=/home/tcwg-buildbot
+  HOSTNAME=linaro-clang-armv8-lld-2stage
+  LANG=en_US.UTF-8
+  LOGNAME=tcwg-buildbot
+  MAIL=/var/mail/tcwg-buildbot
+  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+  PWD=/home/tcwg-buildbot/worker/clang-armv8-lld-2stage/test/lnt
+  SHELL=/bin/bash
+  SHLVL=0
+  SUDO_COMMAND=/bin/bash -c buildbot-worker restart --nodaemon /home/tcwg-buildbot/worker
+  SUDO_GID=0
+  SUDO_UID=0
+  SUDO_USER=root
+  TERM=xterm
+  USER=tcwg-buildbot
+  _=/usr/bin/buildbot-worker
+ using PTY: False
+9bf188850e135b306ac82b72cf480c3e3d680cd5
+program finished with exit code 0
+elapsedTime=0.009081
