@@ -1,0 +1,228 @@
+ninja -j 32 install
+ in dir /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build (timeout 1200 secs)
+ watching logfiles {}
+ argv: [b'ninja', b'-j', b'32', b'install']
+ environment:
+  HOME=/home/ompworker
+  HSA_ENABLE_SDMA=0
+  LANG=en_US.UTF-8
+  LESSCLOSE=/usr/bin/lesspipe %s %s
+  LESSOPEN=| /usr/bin/lesspipe %s
+  LOGNAME=ompworker
+  LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+  MAIL=/var/mail/ompworker
+  NINJA_STATUS=%e [%u/%r/%f] 
+  OLDPWD=/home/master
+  PATH=/home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+  PWD=/home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build
+  SHELL=/bin/bash
+  SHLVL=1
+  SUDO_COMMAND=/usr/bin/su ompworker
+  SUDO_GID=1000
+  SUDO_UID=1000
+  SUDO_USER=master
+  TERM=dumb
+  USER=ompworker
+  _=/usr/bin/buildbot-worker
+ using PTY: False
+0.000 [11/1/0] Performing build step for 'builtins'
+ninja: no work to do.
+0.029 [10/1/1] No install step for 'builtins'
+0.055 [9/1/3] Completed 'builtins'
+0.055 [8/1/3] Performing configure step for 'runtimes'
+Not searching for unused variables given on the command line.
+-- Building with -fPIC
+-- Found Python3: /usr/bin/python3.8 (found version "3.8.10") found components: Interpreter 
+-- LLVM host triple: x86_64-unknown-linux-gnu
+-- LLVM default target triple: x86_64-unknown-linux-gnu
+-- Compiler-RT supported architectures: x86_64;i386
+-- Generated Sanitizer SUPPORTED_TOOLS list on "Linux" is "asan;lsan;hwasan;msan;tsan;ubsan"
+-- sanitizer_common tests on "Linux" will run against "asan;lsan;hwasan;msan;tsan;ubsan"
+-- check-shadowcallstack does nothing.
+-- Found Python3: /usr/bin/python3.8 (found version "3.8.10") found components: Interpreter Development Development.Module Development.Embed 
+-- Using LLVM include directories: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.src/llvm/include;/home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/include
+Failed to 'dlopen' libcuda.so.1
+-- Building the offload library with support for the "amdgpu;cuda;host" plugins
+-- OMPT target enabled
+-- OpenMP tools dir in libomptarget: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/runtimes/runtimes-bins/openmp/runtime/src
+-- Building AMDGPU plugin linked against libhsa
+-- Building CUDA NextGen offloading plugin.
+-- Building CUDA plugin for dlopened libcuda
+-- Not generating NVIDIA tests, no supported devices detected. Use 'LIBOMPTARGET_FORCE_NVIDIA_TESTS' to override.
+-- Building x86_64 plugin linked with libffi
+-- Building DeviceRTL. Using clang: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/bin/clang, llvm-link: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/bin/llvm-link and opt: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/bin/opt
+-- Building the llvm-omp-device-info tool
+-- Building the llvm-omp-kernel-replay tool
+-- Building offloading runtime library libomptarget.
+-- Building plugin unit tests for omptarget.rtl.amdgpu
+-- Building plugin unit tests for omptarget.rtl.host
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/runtimes/runtimes-bins
+1.961 [7/1/4] Performing configure step for 'runtimes-amdgcn-amd-amdhsa'
+Not searching for unused variables given on the command line.
+-- Could NOT find Terminfo (missing: Terminfo_LIBRARIES Terminfo_LINKABLE) 
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY) (found version "1.2.11")
+-- Could NOT find Terminfo (missing: Terminfo_LIBRARIES Terminfo_LINKABLE) 
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY) (found version "1.2.11")
+-- LLVM host triple: x86_64-unknown-linux-gnu
+-- LLVM default target triple: amdgcn-amd-amdhsa
+-- Will use /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/bin/libc-hdrgen for libc header generation.
+-- Setting LIBC_NAMESPACE namespace to '__llvm_libc_19_0_0_git'
+-- Set COMPILER_RESOURCE_DIR to /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/lib/clang/19 using --print-resource-dir
+-- Building libc for amdgpu on gpu
+-- LIBC_CONF_ENABLE_STRONG_STACK_PROTECTOR: ON
+-- LIBC_CONF_KEEP_FRAME_POINTER: ON
+-- LIBC_CONF_PRINTF_DISABLE_FIXED_POINT: OFF
+-- LIBC_CONF_PRINTF_DISABLE_FLOAT: OFF
+-- LIBC_CONF_PRINTF_DISABLE_INDEX_MODE: OFF
+-- LIBC_CONF_PRINTF_DISABLE_WRITE_INT: OFF
+-- LIBC_CONF_PRINTF_FLOAT_TO_STR_USE_MEGA_LONG_DOUBLE_TABLE: OFF
+-- LIBC_CONF_MEMSET_X86_USE_SOFTWARE_PREFETCHING: OFF
+-- LIBC_CONF_STRING_UNSAFE_WIDE_READ: OFF
+-- Writing config doc to /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.src/libc/docs/configure.rst
+-- Overriding - LIBC_CONF_PRINTF_DISABLE_FLOAT: ON (Previous value: OFF)
+-- Overriding - LIBC_CONF_PRINTF_DISABLE_INDEX_MODE: ON (Previous value: OFF)
+-- Overriding - LIBC_CONF_PRINTF_DISABLE_WRITE_INT: ON (Previous value: OFF)
+-- Overriding - LIBC_CONF_PRINTF_FLOAT_TO_STR_USE_MEGA_LONG_DOUBLE_TABLE: OFF (Previous value: OFF)
+-- NVPTX backend is not available, tests will not be built
+-- Set CPU features: 
+-- Compiler features available: 
+-- Skipping header signal.h as the target config is missing
+-- Found the ROCm device library. Implementations falling back to the vendor libraries will be resolved statically.
+CMake Warning at /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.src/libc/test/CMakeLists.txt:13 (message):
+  Cannot build libc GPU tests, missing loader or architecture
+
+
+-- check-runtimes does nothing.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/runtimes/runtimes-amdgcn-amd-amdhsa-bins
+5.343 [6/1/5] Performing build step for 'runtimes'
+0.066 [13/23/1] Generating exported symbols for clang_rt.hwasan_cxx-x86_64
+0.067 [13/22/2] Generating exported symbols for clang_rt.hwasan_aliases_cxx-x86_64
+0.069 [13/21/3] Generating exported symbols for clang_rt.memprof_cxx-x86_64
+0.071 [13/20/4] Generating exported symbols for clang_rt.ubsan_minimal-x86_64
+0.071 [13/19/5] Generating exported symbols for clang_rt.asan_cxx-x86_64
+0.084 [13/18/6] Generating exported symbols for clang_rt.dfsan-x86_64
+0.084 [13/17/7] Generating exported symbols for clang_rt.msan_cxx-x86_64
+0.087 [13/16/8] Generating exported symbols for clang_rt.ubsan_standalone_cxx-x86_64
+0.088 [13/15/9] Generating version list for clang_rt.ubsan_standalone-dynamic-x86_64
+0.088 [13/14/10] Generating exported symbols for clang_rt.tsan_cxx-x86_64
+0.089 [13/13/11] Generating exported symbols for clang_rt.ubsan_standalone-x86_64
+0.089 [13/12/12] Generating version list for clang_rt.ubsan_standalone-dynamic-i386
+0.101 [11/13/13] Generating exported symbols for clang_rt.hwasan-x86_64
+0.104 [11/12/14] Generating version list for clang_rt.hwasan-dynamic-x86_64
+0.110 [11/11/15] Building CXX object compiler-rt/lib/ubsan/CMakeFiles/RTUbsan_dynamic_version_script_dummy.x86_64.dir/dummy.cpp.o
+0.112 [10/11/16] Building CXX object compiler-rt/lib/ubsan/CMakeFiles/RTUbsan_dynamic_version_script_dummy.i386.dir/dummy.cpp.o
+0.117 [9/11/17] Generating version list for clang_rt.hwasan_aliases-dynamic-x86_64
+0.123 [8/11/18] Generating exported symbols for clang_rt.memprof-x86_64
+0.126 [8/10/19] Generating exported symbols for clang_rt.hwasan_aliases-x86_64
+0.126 [8/9/20] Generating version list for clang_rt.asan-dynamic-i386
+0.129 [8/8/21] Generating version list for clang_rt.memprof-dynamic-x86_64
+0.137 [7/8/22] Building CXX object compiler-rt/lib/hwasan/CMakeFiles/RTHwasan_dynamic_version_script_dummy.x86_64.dir/dummy.cpp.o
+0.138 [5/9/23] Generating exported symbols for clang_rt.msan-x86_64
+0.140 [5/8/24] Generating exported symbols for clang_rt.tsan-x86_64
+0.146 [5/7/25] Generating version list for clang_rt.asan-dynamic-x86_64
+0.148 [3/8/26] Generating exported symbols for clang_rt.asan-x86_64
+0.150 [3/7/27] Building CXX object compiler-rt/lib/memprof/CMakeFiles/RTMemprof_dynamic_version_script_dummy.x86_64.dir/dummy.cpp.o
+0.156 [2/7/28] Linking CXX shared library /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/lib/clang/19/lib/x86_64-unknown-linux-gnu/libclang_rt.ubsan_standalone.so
+0.159 [2/6/29] Linking CXX shared library /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/lib/clang/19/lib/i386-unknown-linux-gnu/libclang_rt.ubsan_standalone.so
+0.166 [2/5/30] Building CXX object compiler-rt/lib/asan/CMakeFiles/RTAsan_dynamic_version_script_dummy.x86_64.dir/dummy.cpp.o
+0.168 [1/5/31] Building CXX object compiler-rt/lib/asan/CMakeFiles/RTAsan_dynamic_version_script_dummy.i386.dir/dummy.cpp.o
+0.191 [0/5/32] Linking CXX shared library /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/lib/clang/19/lib/x86_64-unknown-linux-gnu/libclang_rt.hwasan.so
+0.193 [0/4/33] Linking CXX shared library /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/lib/clang/19/lib/x86_64-unknown-linux-gnu/libclang_rt.hwasan_aliases.so
+0.207 [0/3/34] Linking CXX shared library /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/lib/clang/19/lib/x86_64-unknown-linux-gnu/libclang_rt.memprof.so
+0.230 [0/2/35] Linking CXX shared library /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/lib/clang/19/lib/x86_64-unknown-linux-gnu/libclang_rt.asan.so
+0.232 [0/1/36] Linking CXX shared library /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/lib/clang/19/lib/i386-unknown-linux-gnu/libclang_rt.asan.so
+5.725 [5/1/6] Performing build step for 'runtimes-amdgcn-amd-amdhsa'
+ninja: no work to do.
+5.998 [4/1/7] No install step for 'runtimes-amdgcn-amd-amdhsa'
+6.027 [3/1/9] Completed 'runtimes-amdgcn-amd-amdhsa'
+6.028 [2/1/9] No install step for 'runtimes'
+6.050 [1/1/11] Completed 'runtimes'
+6.050 [0/1/11] Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMDemangle.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMSupport.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMTableGen.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMTableGenBasic.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMTableGenCommon.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/bin/llvm-tblgen
+-- Set runtime path of "/home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/bin/llvm-tblgen" to "$ORIGIN/../lib"
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMCore.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMFuzzerCLI.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMFuzzMutate.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMFileCheck.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMInterfaceStub.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMIRPrinter.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMIRReader.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMCodeGen.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMSelectionDAG.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMAsmPrinter.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMMIRParser.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMGlobalISel.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMCodeGenTypes.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMBinaryFormat.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMBitReader.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMBitWriter.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMBitstreamReader.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMDWARFLinker.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMDWARFLinkerClassic.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMDWARFLinkerParallel.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMExtensions.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMFrontendDriver.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMFrontendHLSL.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMFrontendOpenACC.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMFrontendOpenMP.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMFrontendOffloading.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMTransformUtils.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMInstrumentation.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMAggressiveInstCombine.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMInstCombine.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMScalarOpts.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMipo.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMVectorize.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMObjCARCOpts.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMCoroutines.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMCFGuard.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMHipStdPar.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMLinker.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMAnalysis.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMLTO.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMMC.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMMCParser.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMMCDisassembler.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMMCA.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMObjCopy.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMObject.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMObjectYAML.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMOption.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMRemarks.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMDebuginfod.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMDebugInfoDWARF.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMDebugInfoGSYM.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMDebugInfoLogicalView.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMDebugInfoMSF.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMDebugInfoCodeView.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMDebugInfoPDB.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMSymbolize.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMDebugInfoBTF.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMDWP.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMExecutionEngine.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMInterpreter.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMJITLink.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMMCJIT.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMOrcJIT.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMOrcDebugging.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMOrcShared.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMOrcTargetProcess.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMRuntimeDyld.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMTarget.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMX86CodeGen.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMX86AsmParser.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMX86Disassembler.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMX86TargetMCA.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMX86Desc.a
+-- Installing: /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.inst/lib/libLLVMX86Info.a
+-- In
