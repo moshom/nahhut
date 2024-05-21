@@ -1,1 +1,208 @@
-doc
+ninja -j 32
+ in dir /home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build (timeout 1200 secs)
+ watching logfiles {}
+ argv: [b'ninja', b'-j', b'32']
+ environment:
+  HOME=/home/ompworker
+  HSA_ENABLE_SDMA=0
+  LANG=en_US.UTF-8
+  LESSCLOSE=/usr/bin/lesspipe %s %s
+  LESSOPEN=| /usr/bin/lesspipe %s
+  LOGNAME=ompworker
+  LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+  MAIL=/var/mail/ompworker
+  NINJA_STATUS=%e [%u/%r/%f] 
+  OLDPWD=/home/master
+  PATH=/home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+  PWD=/home/ompworker/bbot/openmp-offload-libc-amdgpu-runtime/llvm.build
+  SHELL=/bin/bash
+  SHLVL=1
+  SUDO_COMMAND=/usr/bin/su ompworker
+  SUDO_GID=1000
+  SUDO_UID=1000
+  SUDO_USER=master
+  TERM=dumb
+  USER=ompworker
+  _=/usr/bin/buildbot-worker
+ using PTY: False
+0.451 [4152/32/1] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/DLangDemangle.cpp.o
+0.451 [4151/32/2] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/Demangle.cpp.o
+0.452 [4150/32/3] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangleNodes.cpp.o
+0.452 [4149/32/4] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/RustDemangle.cpp.o
+0.452 [4148/32/5] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APSInt.cpp.o
+0.453 [4147/32/6] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMBuildAttrs.cpp.o
+0.453 [4146/32/7] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AutoConvert.cpp.o
+0.453 [4145/32/8] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ABIBreak.cpp.o
+0.453 [4144/32/9] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Base64.cpp.o
+0.454 [4143/32/10] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BuryPointer.cpp.o
+0.454 [4142/32/11] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Caching.cpp.o
+0.551 [4141/32/12] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamReader.cpp.o
+0.551 [4140/32/13] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/ItaniumDemangle.cpp.o
+0.552 [4139/32/14] Building CXX object lib/Demangle/CMakeFiles/LLVMDemangle.dir/MicrosoftDemangle.cpp.o
+0.552 [4138/32/15] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APInt.cpp.o
+0.552 [4137/32/16] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMWinEH.cpp.o
+0.553 [4136/32/17] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Allocator.cpp.o
+0.553 [4135/32/18] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/AMDGPUMetadata.cpp.o
+0.553 [4134/32/19] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamError.cpp.o
+0.553 [4133/32/20] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BalancedPartitioning.cpp.o
+0.554 [4132/32/21] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Chrono.cpp.o
+0.554 [4131/32/22] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/COM.cpp.o
+0.554 [4130/32/23] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFixedPoint.cpp.o
+0.555 [4129/32/24] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/APFloat.cpp.o
+0.555 [4128/32/25] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BlockFrequency.cpp.o
+0.555 [4127/32/26] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BranchProbability.cpp.o
+0.556 [4126/32/27] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CachePruning.cpp.o
+0.556 [4125/32/28] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/circular_raw_ostream.cpp.o
+0.556 [4124/32/29] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CodeGenCoverage.cpp.o
+0.557 [4123/32/30] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Compression.cpp.o
+0.557 [4122/32/31] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertUTFWrapper.cpp.o
+0.557 [4121/32/32] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CrashRecoveryContext.cpp.o
+0.558 [4120/32/33] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CSKYAttributeParser.cpp.o
+0.558 [4119/32/34] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ARMAttributeParser.cpp.o
+0.559 [4118/32/35] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamRef.cpp.o
+0.559 [4117/32/36] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CommandLine.cpp.o
+0.560 [4116/32/37] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CRC.cpp.o
+0.560 [4115/32/38] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertUTF.cpp.o
+0.560 [4114/32/39] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ConvertEBCDIC.cpp.o
+0.561 [4113/32/40] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/CSKYAttributes.cpp.o
+0.561 [4112/32/41] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DataExtractor.cpp.o
+0.561 [4111/32/42] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Debug.cpp.o
+0.562 [4110/32/43] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/BinaryStreamWriter.cpp.o
+0.562 [4109/32/44] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DivisionByConstantInfo.cpp.o
+0.563 [4108/32/45] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ExtensibleRTTI.cpp.o
+0.570 [4107/32/46] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ELFAttributes.cpp.o
+0.570 [4106/32/47] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DeltaAlgorithm.cpp.o
+0.570 [4105/32/48] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DAGDeltaAlgorithm.cpp.o
+0.571 [4104/32/49] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DJB.cpp.o
+0.571 [4103/32/50] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Error.cpp.o
+0.571 [4102/32/51] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Hashing.cpp.o
+0.573 [4101/32/52] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/GlobPattern.cpp.o
+0.573 [4100/32/53] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DebugCounter.cpp.o
+0.574 [4099/32/54] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ELFAttributeParser.cpp.o
+0.574 [4098/32/55] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ExponentialBackoff.cpp.o
+0.574 [4097/32/56] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FloatingPointMode.cpp.o
+0.575 [4096/32/57] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FormattedStream.cpp.o
+0.575 [4095/32/58] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FormatVariadic.cpp.o
+0.575 [4094/32/59] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/GraphWriter.cpp.o
+0.576 [4093/32/60] Linking CXX static library lib/libLLVMDemangle.a
+0.577 [4092/32/61] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FileCollector.cpp.o
+0.577 [4091/32/62] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FileOutputBuffer.cpp.o
+0.577 [4090/32/63] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FoldingSet.cpp.o
+0.578 [4089/32/64] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/HexagonAttributes.cpp.o
+0.578 [4088/32/65] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/IntEqClasses.cpp.o
+0.578 [4087/32/66] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/IntervalMap.cpp.o
+0.579 [4086/32/67] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/LEB128.cpp.o
+0.579 [4085/32/68] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MemAlloc.cpp.o
+0.579 [4084/32/69] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/HexagonAttributeParser.cpp.o
+0.580 [4083/32/70] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/InstructionCost.cpp.o
+0.580 [4082/32/71] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/LineIterator.cpp.o
+0.580 [4081/32/72] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/Main.cpp.o
+0.581 [4080/32/73] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/KnownBits.cpp.o
+0.581 [4079/32/74] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Locale.cpp.o
+0.582 [4078/32/75] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MathExtras.cpp.o
+0.583 [4077/32/76] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MemoryBufferRef.cpp.o
+0.583 [4076/32/77] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ErrorHandling.cpp.o
+0.584 [4075/32/78] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/FileUtilities.cpp.o
+0.633 [4074/32/79] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/OptimizedStructLayout.cpp.o
+0.633 [4073/32/80] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SmallVector.cpp.o
+0.634 [4072/32/81] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/InitLLVM.cpp.o
+0.634 [4071/32/82] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/LockFileManager.cpp.o
+0.635 [4070/32/83] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ManagedStatic.cpp.o
+0.635 [4069/32/84] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MD5.cpp.o
+0.635 [4068/32/85] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MSP430Attributes.cpp.o
+0.636 [4067/32/86] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/NativeFormatting.cpp.o
+0.636 [4066/32/87] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MSP430AttributeParser.cpp.o
+0.637 [4065/32/88] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Parallel.cpp.o
+0.637 [4064/32/89] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RISCVAttributeParser.cpp.o
+0.672 [4063/32/90] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/MemoryBuffer.cpp.o
+0.673 [4062/32/91] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/PGOOptions.cpp.o
+0.673 [4061/32/92] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/PrettyStackTrace.cpp.o
+0.673 [4060/32/93] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ScopedPrinter.cpp.o
+0.674 [4059/32/94] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SHA256.cpp.o
+0.674 [4058/32/95] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/StringMap.cpp.o
+0.674 [4057/32/96] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Optional.cpp.o
+0.675 [4056/32/97] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RISCVAttributes.cpp.o
+0.675 [4055/32/98] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SHA1.cpp.o
+0.675 [4054/32/99] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SpecialCaseList.cpp.o
+0.675 [4053/32/100] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Statistic.cpp.o
+0.702 [4052/32/101] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Twine.cpp.o
+0.702 [4051/32/102] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/PluginLoader.cpp.o
+0.702 [4050/32/103] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ScaledNumber.cpp.o
+0.703 [4049/32/104] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Signposts.cpp.o
+0.703 [4048/32/105] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SmallPtrSet.cpp.o
+0.703 [4047/32/106] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SourceMgr.cpp.o
+0.704 [4046/32/107] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/StringRef.cpp.o
+0.704 [4045/32/108] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SuffixTree.cpp.o
+0.704 [4044/32/109] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/TarWriter.cpp.o
+0.705 [4043/32/110] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ThreadPool.cpp.o
+0.705 [4042/32/111] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/ToolOutputFile.cpp.o
+0.725 [4041/32/112] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/JSON.cpp.o
+0.725 [4040/32/113] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/StringSaver.cpp.o
+0.726 [4039/32/114] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SuffixTreeNode.cpp.o
+0.726 [4038/32/115] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Timer.cpp.o
+0.727 [4037/32/116] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/TypeSize.cpp.o
+0.727 [4036/32/117] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/UnicodeNameToCodepointGenerated.cpp.o
+0.728 [4035/32/118] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/YAMLTraits.cpp.o
+0.728 [4034/32/119] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/raw_os_ostream.cpp.o
+0.729 [4033/32/120] Building C object lib/Support/CMakeFiles/LLVMSupport.dir/regerror.c.o
+0.729 [4032/32/121] Building C object lib/Support/CMakeFiles/LLVMSupport.dir/regstrlcpy.c.o
+0.730 [4031/32/122] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Z3Solver.cpp.o
+0.801 [4030/32/123] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/VersionTuple.cpp.o
+0.801 [4029/32/124] Building CXX object projects/libc/utils/HdrGen/CMakeFiles/libc-hdrgen.dir/Generator.cpp.o
+0.801 [4028/32/125] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Valgrind.cpp.o
+0.802 [4027/32/126] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Regex.cpp.o
+0.802 [4026/32/127] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/SystemUtils.cpp.o
+0.802 [4025/32/128] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/TimeProfiler.cpp.o
+0.803 [4024/32/129] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/UnicodeCaseFold.cpp.o
+0.803 [4023/32/130] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/VirtualFileSystem.cpp.o
+0.803 [4022/32/131] Building C object lib/Support/CMakeFiles/LLVMSupport.dir/regexec.c.o
+0.804 [4021/32/132] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/xxhash.cpp.o
+0.804 [4020/32/133] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Memory.cpp.o
+0.812 [4019/32/134] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Atomic.cpp.o
+0.813 [4018/32/135] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/WithColor.cpp.o
+0.813 [4017/32/136] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/YAMLParser.cpp.o
+0.813 [4016/32/137] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/raw_socket_stream.cpp.o
+0.813 [4015/32/138] Building C object lib/Support/CMakeFiles/LLVMSupport.dir/regfree.c.o
+0.814 [4014/32/139] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/DynamicLibrary.cpp.o
+0.814 [4013/32/140] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Path.cpp.o
+0.814 [4012/32/141] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Process.cpp.o
+0.815 [4011/32/142] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RWMutex.cpp.o
+0.815 [4010/32/143] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Threading.cpp.o
+0.815 [4009/32/144] Building C object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_dispatch.c.o
+0.847 [4008/32/145] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Program.cpp.o
+0.847 [4007/32/146] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/raw_ostream.cpp.o
+0.848 [4006/32/147] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Errno.cpp.o
+0.848 [4005/32/148] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Signals.cpp.o
+0.848 [4004/32/149] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/Watchdog.cpp.o
+0.848 [4003/32/150] Building C object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_portable.c.o
+0.849 [4002/32/151] Building C object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_neon.c.o
+0.853 [4001/32/152] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/Error.cpp.o
+0.854 [4000/32/153] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/DetailedRecordsBackend.cpp.o
+0.854 [3999/32/154] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/JSONBackend.cpp.o
+0.855 [3998/32/155] Building C object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3.c.o
+0.855 [3997/32/156] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/Parser.cpp.o
+0.856 [3996/32/157] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/Record.cpp.o
+0.856 [3995/32/158] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/StringMatcher.cpp.o
+0.856 [3994/32/159] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/TGParser.cpp.o
+0.857 [3993/32/160] Building CXX object utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/Attributes.cpp.o
+0.858 [3992/32/161] Building ASM object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_sse2_x86-64_unix.S.o
+0.858 [3991/32/162] Building ASM object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_avx2_x86-64_unix.S.o
+0.859 [3990/32/163] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/TableGenBackendSkeleton.cpp.o
+0.860 [3989/32/164] Building CXX object lib/Support/CMakeFiles/LLVMSupport.dir/RandomNumberGenerator.cpp.o
+0.860 [3988/32/165] Building C object lib/Support/CMakeFiles/LLVMSupport.dir/regcomp.c.o
+0.861 [3987/32/166] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/TableGenBackend.cpp.o
+0.861 [3986/32/167] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/TGLexer.cpp.o
+0.861 [3985/32/168] Building CXX object utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/TableGen.cpp.o
+0.862 [3984/32/169] Building ASM object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_avx512_x86-64_unix.S.o
+0.862 [3983/32/170] Building ASM object lib/Support/BLAKE3/CMakeFiles/LLVMSupportBlake3.dir/blake3_sse41_x86-64_unix.S.o
+0.872 [3982/32/171] Generating VCSRevision.h
+0.877 [3981/32/172] Building CXX object utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/DirectiveEmitter.cpp.o
+0.877 [3980/32/173] Building CXX object lib/DebugInfo/MSF/CMakeFiles/LLVMDebugInfoMSF.dir/MSFBuilder.cpp.o
+0.878 [3979/32/174] Building CXX object lib/TableGen/CMakeFiles/LLVMTableGen.dir/SetTheory.cpp.o
+0.878 [3978/32/175] Building CXX object utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/ARMTargetDefEmitter.cpp.o
+0.878 [3977/32/176] Building CXX object utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/VTEmitter.cpp.o
+0.878 [3976/32/177] Building CXX object utils/TableGen/CMakeFiles/llvm-min-tblgen.dir/RISCVTargetDefEmitter.cpp.o
+0.879 [3975/32/178] Building CXX object utils/TableGen/Basic/CMakeFiles/obj.LLVMTableGenBasic.dir/SDNodeProperties.cpp.o
+0.879 [3974/32/179] Building CXX object lib/Bitstream/Reader/CMakeFiles/LLVMBitstreamReader.dir/BitstreamReader.cpp.o
+0.879 [3973/32/180] Building CXX object lib/Option/CMakeFiles/LLVMOption.dir/Arg.cpp.o
+0.880 [3972/32/1doc
